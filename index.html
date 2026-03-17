@@ -5,22 +5,20 @@
 <link rel="stylesheet" href="index.css">
 </head>
 <body>
+<h2>Interactive Task Manager App</h2>
 
-<h2>Interactive Task Manager App!.</h2>
 <div class="input-area">
-<input type="text" id="taskInput" placeholder="Enter task" required>
-<button onclick="addTask()">AddTask</button>
+    <input type="text" id="taskInput" placeholder="Enter task">
+    <button onclick="app.addTask()">Add</button>
+</div>
 
-<ul id="taskList"></ul></div>
+<ul id="taskList"></ul>
 
 <div class="filters">
-   
-<button data-filter="all">All</button>
-<button data-filter="completed">Completed</button>
-<button data-filter="pending">Pending</button>
+    <button data-filter="all">All</button>
+    <button data-filter="completed">Completed</button>
+    <button data-filter="pending">Pending</button>
 </div>
-<button>
-<input type="checkbox" id="click"></button>
 
 <script src="index.js"></script>
 
